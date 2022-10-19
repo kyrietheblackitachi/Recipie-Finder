@@ -18,7 +18,7 @@ const Search=({recipeData,input,setInput})=>{
         <Box style={styles.paperContainer} className='search-box'>
             <h1>Struggling to cook that meal?</h1>
             <h2>Well you're one search away.</h2>
-            <Stack alignItems='center' direction='row'><TextField label='Search..' className='text-field' onChange={(e)=>{setInput(e.target.value.toLowerCase())}} value={input}/><img onClick={fetchData}src={searchIcon} alt='icon'/></Stack>
+            <Stack alignItems='center' direction='row'><TextField autoComplete='off' label='Search..' className='text-field' onChange={(e)=>{setInput(e.target.value.toLowerCase())}} value={input}/><img onClick={fetchData}src={searchIcon} alt='icon'/></Stack>
         </Box>
         
     )

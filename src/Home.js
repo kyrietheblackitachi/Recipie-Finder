@@ -13,7 +13,8 @@ const Home = () => {
   const [input, setInput] = useState("");
   useEffect(() => {
     recipeData();
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
   const recipeData = async () => {
     const data = await recipeSearch(
       `https://edamam-recipe-search.p.rapidapi.com/search?q=${input}`,
